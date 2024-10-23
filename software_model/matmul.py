@@ -1437,6 +1437,7 @@ class Matmul(Operator):
                     f.writelines(f"matmul1, {M}, {N}, {K},\n")
 
                 logpath = f"./systolic_array_model/temp/"
+                import pudb; pu.db
                 s = scalesim(
                     save_disk_space=True,
                     verbose=False,
